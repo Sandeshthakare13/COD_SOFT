@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Myntracss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>www.myntra.com</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <nav>
+        <div class="left dflex">
+            <a href="Landing.html"><img src="myntra_logo.png" width="85px" height="185px" class="logo"></a>
+        </div>
+        <ol><a href="https://www.myntra.com/tshirts/roadster/roadster-men-green-melange-solid-v-neck-t-shirt/1996729/buy">MEN</a></ol>
+        <ol><a href="https://www.myntra.com/kurti?rawQuery=KURTI">WOMEN</a></ol>
+        <ol><a href="https://www.myntra.com/shop/kids">KIDS</a></ol>
+        <ol><a href="https://www.myntra.com/shop/home-living">HOME&LIVING</a></ol>
+        <ol><a href="https://www.myntra.com/hair-oil">BEAUTY</a></ol>
+        <ol> <a href="https://www.myntra.com/studio/home?appRoute=%7B%22url%22%3A%22%2Fstudio%2Fhome%22%7D">STUDIO</a>
+        </ol>
+        <div class="box">
+            <div class="dflex">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for products, brands, and more">
+                    <img src="search-icon.png" alt="Search Icon" class="search-icon">
+                  </div>   
+            </div>
+        </div>
+        <div class="right dflex"> <a href="https://www.myntra.com/wishlist"><img src="nav3.png" width="160px" height="65px"></a></div>
+        <div class="item">
+            <i class="fa fa-flag" aria-hidden="ture"></i>
+            <i class="fa fa-amazon" aria-hidden="true"></i>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <i class="https://icons8.com/icon/32584/india"></i>
+        </div>
+        <br>
+    </nav>
+    <!--Timer starts-->
+    <div><h2>SALE ENDS IN</h2></div>
+    <div id="countdown"> 10:00</div>
+    <style>
+      
+    #countdown {
+        font-size: 36px;
+        font-weight: bold;
+        color: #d73030;
+        background-color: rgb(216, 216, 243);
+        text-align: center;
+      }
+    h2{
+        align-items: center;
+        text-align: center;
+        color: black;
+        background-color: rgb(211, 183, 237);
+      }
+      .image-strip {
+      display: flex;
+      overflow-x: auto;
+      gap: 50px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .image-card {
+      flex: 0 0 200px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-description {
+      padding: 20px;
+      padding-left: 20px;
+      text-align: center;
+    }
+    .image-card {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.1s ease;
+    }
+      </style>
+      <script>
+        // Set the countdown time in seconds
+        var countdownTime = 600; // 10 minutes
+        var countdownElement = document.getElementById('countdown');
+        function updateCountdown() {
+          var minutes = Math.floor(countdownTime / 60);
+          var seconds = countdownTime % 60;
+          // Add leading zero if needed
+          minutes = (minutes < 10) ? '0' + minutes : minutes;
+          seconds = (seconds < 10) ? '0' + seconds : seconds;
+          countdownElement.textContent = minutes + ':' + seconds;
+          // Check if the countdown has reached zero
+          if (countdownTime <= 0) {
+            countdownElement.textContent = "Time's up!";
+            clearInterval(countdownInterval);
+          } else {
+            countdownTime--;
+          }
+        }
+        // Update the countdown every second (1000 milliseconds)
+        var countdownInterval = setInterval(updateCountdown, 1000);
+        // Start the timer automatically
+        updateCountdown();
+
+        function zoomIn() {
+    document.getElementById("zoomImage").style.transform = "scale(1.2)";
+  }
+
+  function zoomOut() {
+    document.getElementById("zoomImage").style.transform = "scale(1)";
+  }
+      </script>
+    <!--Timer ends-->
+    <section class="sec-1">
+        <div class="container">
+            <div class="image-box">
+                <div class="slide">
+                            <img src="banner.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="image">
+        <img src="ban2.png" width="1600px" height="900px">
+    </div>
+    <div class="detail">
+        <div class="image-strip">
+            <div class="image-card">
+              <img src="shoes.png" alt="Image 1">
+              <div class="image-description"><a href="https://www.myntra.com/footwear?
+                f=Brand%3AADIDAS%2CADIDAS%20Original
+                s%2CASICS%2CSkechers%3A%3ACategories
+                %3ACasual%20Shoes%2CSports%20Shoes&r
+                awQuery=footwear&rf=Discount%20Range
+                %3A50.0_100.0_50.0%20TO%20100.0">Run-Your-Race Shoes</a></div>
+            </div>
+            <div class="image-card">
+              <img src="lady.png" alt="Image 2">
+              <div class="image-description"><a href="https://www.myntra.com/women-footwear?
+                f=Brand%3AALDO%2CBoohoo%2CDOROTHY%20PERKINS%2CFCUK%2CKenneth%20Cole%2CMANGO%
+                2CMissguided%2CSaint%20G&rawQuery=Women%20Footwear&rf=Discount%20Range%3A40.
+                0_100.0_40.0%20TO%20100.0">Walk the Talk </a></div>
+            </div>
+            <div class="image-card">
+              <img src="lagage.png" alt="Image 3">
+              <div class="image-description"><a href="https://www.myntra.com/bag?rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">The Bags Special</a></div>
+            </div>
+            <div class="image-card">
+              <img src="mobile.png" alt="Image 4">
+              <div class="image-description"><a href="https://www.apple.com/in/iphone/">I phones</a></div>
+            </div>
+            <div class="image-card">
+              <img src="Home.png" alt="Image 5">
+              <div class="image-description"><a href="https://www.myntra.com/shop/home-living">Interior</a></div>
+            </div>
+            <div class="image-card">
+              <img src="tshirt.png" alt="Image 6">
+              <div class="image-description"><a href="https://www.myntra.com/men-tshirts">Mens T-Shirt</a></div>
+            </div>
+          </div>
+    </div>
+    <div class="text">
+        <h1>Todays deals</h1>
+    </div>
+    <div class="img">
+        <img src="laptop.png" alt="" ><a href=""></a>
+        <img src="watch.png" alt="">
+        <img src="v.png" alt="">
+        <img src="main.png" alt="">
+    </div>
+    <section class="sec-2">
+        <div class="slide-sec">
+            <h3>Popular products in Wirelessly Internationally</h3>
+            <ul class="product-slide">
+                <li><img src="clock.png" width="250px">A Clock</li>
+                <li><img src="last.png" width="1000px" height="300px"></li>
+                
+            
+            </ul>
+        </div>
+    </section>
+    
+    
+    <div class="footer">
+        <div class="topper">
+            <p>Back to Top</p>
+        </div>
+        <hr>
+        <div class="list">
+            <img src="lastbg.png" alt="">
+        </div>
+        <hr>
+        <div class="end">
+            <li>Get to Know Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+        </div>
+    </div>
+</body>
+</html>
